@@ -1,0 +1,13 @@
+<html>
+  <head>
+    {% render 'pagefly-head' %}
+    {{ content_for_header }}
+    <link rel="stylesheet" href="{{ 'style.css' |  asset_url }}">
+    </head>
+  <body >
+    {% section 'announcement-bar' %}
+    <main id="main" role="main" class="w-[95%] md:w-[90%] mx-auto" >
+      {{ content_for_layout }}
+    </main>
+  </body>
+</html>
