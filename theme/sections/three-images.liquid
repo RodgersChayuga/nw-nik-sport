@@ -1,15 +1,17 @@
-<section id="banner" class="text-3xl font-bold underline banner">hello world</section>
+<section>
+  <div class="three-images">Three Images Section</div>
+</section>
 
 <style>
-  .banner{
+  .three-images{
     background: {{ section.settings.background_color}};
     color: {{ section.settings.text_color }};
   }
 </style>
 
-{% schema  %} 
+{%  schema  %} 
 {
-  "name": "Banner",
+  "name": "Three Images",
   "settings":[
     {
       "type": "color",
@@ -26,8 +28,8 @@
   ],
   "presets": [
     {
-      "name":"banner"
+      "name":"three-images"
     }
   ]
 }
- {% endschema %}
+{% endschema %} 
