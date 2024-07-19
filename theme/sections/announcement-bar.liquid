@@ -2,12 +2,12 @@
   <section class="px-2 md:px-12 announcement-bar">
     <div class="flex items-center justify-between">
       <div class="flex gap-2">
-        {% if section.settings.image != blank %}
+        {% if section.settings.image1 != blank %}
           <img 
             height="40"
             width="40"
             loading="lazy"
-            src="{{ section.settings.image  |  image_url }}"
+            src="{{ section.settings.image1 |  image_url }}"
           />
           {% else %}
           <img
@@ -17,7 +17,7 @@
             src="{{ 'a.png'  |  asset_url }}"
           />
         {% endif %}
-        {% if section.settings.image != blank %}
+        {% if section.settings.image2 != blank %}
           <img 
             height="40"
             width="40"
@@ -84,7 +84,7 @@
     },
     {
       "type" : "image_picker",
-      "id" : "image",
+      "id" : "image1",
       "label": "pick image",
       "info": "png recommended format"
     },
