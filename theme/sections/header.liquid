@@ -1,7 +1,13 @@
-<nav>
+<nav class="px-2 border-b md:px-12">
   {% render 'header' %}
 </nav>
 
+<style>
+  .background-search{
+    background: {{ section.settings.background_color}};
+    color: {{ section.settings.text_color }};
+  }
+</style>
 
 {% schema  %} 
 {
@@ -12,7 +18,13 @@
       "id" : "image",
       "label": "pick image",
       "info": "png recommended format"
-    }
+    },
+    {
+      "type": "color",
+      "id":"background_color",
+      "label":"Background Color",
+      "default":"#f4f4f4"
+    },
   ],
   "presets": []
 }
